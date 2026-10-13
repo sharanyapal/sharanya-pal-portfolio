@@ -1,0 +1,53 @@
+name: Polyglot engineering validation
+on:
+  push:
+    paths:
+      - 'polyglot/**'
+      - '.github/workflows/polyglot-validation.yml'
+  pull_request:
+    paths:
+      - 'polyglot/**'
+      - '.github/workflows/polyglot-validation.yml'
+permissions:
+  contents: read
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - run: cd polyglot/sp-go-stream-router && go test -race ./...
+      - run: cd polyglot/sp-go-rate-governor && go test -race ./...
+  native-c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make -C polyglot/sp-c-astar-engine && make -C polyglot/sp-c-astar-engine clean
+      - run: make -C polyglot/sp-c-ring-telemetry && make -C polyglot/sp-c-ring-telemetry clean
+  ruby-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - run: cd polyglot/sp-ruby-access-policy && ruby test.rb
+  typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix polyglot/sp-typescript-state-orchestrator
+      - run: npm test --prefix polyglot/sp-typescript-state-orchestrator
+  python-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m compileall -q polyglot/sp-selenium-portfolio-qa
