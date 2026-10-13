@@ -1,0 +1,6 @@
+[
+  {"username": "alex", "roles": ["analyst"], "active": true},
+  {"username": "jordan", "roles": ["admin", "auditor"], "active": true},
+  {"username": "casey", "roles": ["viewer"], "active": false},
+  {"username": "sam", "roles": ["auditor"], "active": true}
+]
