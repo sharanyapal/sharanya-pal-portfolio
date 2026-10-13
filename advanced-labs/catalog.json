@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "chess-engine",
+    "name": "Knightfall Chess",
+    "category": "Games \u00b7 Search AI",
+    "description": "A legal-move chess engine with check/checkmate, castling, en passant, promotion, undo and a minimax opponent.",
+    "icon": "\u265e"
+  },
+  {
+    "slug": "pac-maze",
+    "name": "PAC//MAZE",
+    "category": "Games \u00b7 Pathfinding",
+    "description": "Arcade maze chase using shortest-path ghost pursuit, power pellets, collision and scoring.",
+    "icon": "\u25c9"
+  },
+  {
+    "slug": "market-lab",
+    "name": "MarketLab Quant",
+    "category": "Finance \u00b7 Backtesting",
+    "description": "CSV-driven strategy lab: moving-average crossovers, fees, equity curves, drawdown and trade history.",
+    "icon": "\u2197"
+  },
+  {
+    "slug": "vision-lab",
+    "name": "Vision / Motion",
+    "category": "Computer Vision \u00b7 Webcam",
+    "description": "Privacy-first on-device motion detector and image capture via getUserMedia and pixel differencing.",
+    "icon": "\u25c9"
+  },
+  {
+    "slug": "chain-lab",
+    "name": "ChainForge",
+    "category": "Blockchain \u00b7 Cryptography",
+    "description": "Create, mine, tamper with and validate an SHA-256 proof-of-work chain. Educational local simulation.",
+    "icon": "\u2b21"
+  },
+  {
+    "slug": "threat-lab",
+    "name": "Sentinel SOC",
+    "category": "Cybersecurity \u00b7 Detection",
+    "description": "Investigate sample or uploaded security logs with sliding-window brute-force rules and explainable alerts.",
+    "icon": "\u25ce"
+  },
+  {
+    "slug": "neural-playground",
+    "name": "Neural Playground",
+    "category": "Machine Learning \u00b7 Backpropagation",
+    "description": "Train a small multilayer neural net from scratch on nonlinear decision boundaries in your browser.",
+    "icon": "\u223f"
+  },
+  {
+    "slug": "growth-lab",
+    "name": "Growth Experiments",
+    "category": "Marketing \u00b7 Experimentation",
+    "description": "Compare conversion tests and run epsilon-greedy multi-armed bandits against seeded campaigns.",
+    "icon": "\u2733"
+  },
+  {
+    "slug": "cloud-lab",
+    "name": "Cloud Reliability Lab",
+    "category": "Cloud \u00b7 Systems",
+    "description": "Explore fault domains, dependent services and Monte Carlo availability under synthetic failure assumptions.",
+    "icon": "\u2601"
+  },
+  {
+    "slug": "climate-live",
+    "name": "Climate Pulse",
+    "category": "Live Data \u00b7 APIs",
+    "description": "Fetch live weather and air quality from Open-Meteo; map measurements to a time-series chart.",
+    "icon": "\u25cc"
+  }
+]

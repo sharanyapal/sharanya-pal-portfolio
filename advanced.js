@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const input=document.getElementById('advancedSearch');if(!input)return;input.addEventListener('input',()=>{let q=input.value.toLowerCase().trim();document.querySelectorAll('#advancedGrid .advanced-card').forEach(c=>{c.hidden=!c.textContent.toLowerCase().includes(q)})})});
