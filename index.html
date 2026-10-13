@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="vault.css" /><link rel="stylesheet" href="advanced.css" /><link rel="stylesheet" href="featured.css" />
-  <script src="script.js" defer></script><script src="vault.js" defer></script><script src="advanced.js" defer></script><script src="featured.js" defer></script>
+  <script src="script.js" defer></script><script src="vault.js" defer></script><script src="advanced.js" defer></script><script src="featured.js" defer></script><script src="carousel-fix.js" defer></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -50,9 +50,9 @@
     
     <section id="featured-projects" class="premiere" aria-labelledby="premiereTitle">
  <div class="premiere-top wrap"><div class="premiere-kicker"><span class="premiere-dot"></span> THE PREMIERE · CURATED ENGINEERING</div><div class="premiere-heading"><div><h2 id="premiereTitle">Now <em>showing.</em></h2><p>Real engineering, considered like a streaming library. Two carefully selected rows, many genres, no infinite walls of identical cards.</p></div><span class="premiere-total">059<small>PROJECTS IN<br>THE VAULT</small></span></div>
- <div class="premiere-filters" id="premiereFilters" role="group" aria-label="Filter featured projects"><button class="premiere-filter selected" data-genre="All">ALL GENRES</button><button class="premiere-filter" data-genre="AI &amp; ML">AI &amp; ML</button><button class="premiere-filter" data-genre="Finance">FINANCE</button><button class="premiere-filter" data-genre="Security">SECURITY</button><button class="premiere-filter" data-genre="Systems">SYSTEMS</button><button class="premiere-filter" data-genre="Games">GAMES</button><button class="premiere-filter" data-genre="Creative">CREATIVE</button></div></div>
+ <div class="premiere-filters" id="premiereFilters" role="group" aria-label="Filter featured projects"><button class="premiere-filter selected" data-genre="All">ALL GENRES</button><button class="premiere-filter" data-genre="AI &amp; ML">AI &amp; ML</button><button class="premiere-filter" data-genre="Finance">FINANCE</button><button class="premiere-filter" data-genre="Security">SECURITY</button><button class="premiere-filter" data-genre="Systems">SYSTEMS</button><button class="premiere-filter" data-genre="Games">GAMES</button><button class="premiere-filter" data-genre="Creative">CREATIVE</button><button type="button" class="premiere-archive-toggle" id="archiveToggle" aria-controls="project-archive" aria-expanded="false">+ EXPLORE 39 EARLIER PROJECTS</button></div></div>
  <div id="premiereRows" class="premiere-rows wrap" aria-live="polite"></div>
- <div class="premiere-foot wrap"><p><b>HANDS-ON</b> · Open a live interactive website or inspect full tested source. Runtime-only projects are labeled SOURCE, not misrepresented as browser demos.</p><a href="#project-archive">OPEN THE FULL PROJECT ARCHIVE ↓</a></div></section>
+ <div class="premiere-foot wrap"><p><b>HANDS-ON</b> · Open a live interactive website or inspect tested source. Runtime-only projects are labeled SOURCE.</p></div></section>
 
 <details class="portfolio-archive" id="project-archive"><summary><span>✦ FULL ARCHIVE</span> <strong>39 previously built projects</strong><small>24 essentials + 15 advanced labs · click to browse</small><span class="archive-arrow">＋</span></summary>
     <section class="vault-section section" id="lab-vault" aria-labelledby="vaultTitle">
