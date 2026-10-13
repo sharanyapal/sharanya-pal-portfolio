@@ -82,3 +82,20 @@
 @media(max-width:600px){.vault-topline{flex-direction:column;gap:21px}.vault-topline h2{font-size:clamp(48px,12vw,74px)}.vault-status{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px}.vault-status strong{margin:0;font-size:39px}.vault-status small{max-width:100px;font-size:8px}.vault-pick{grid-template-columns:1fr;gap:0}.vault-pick-graphic{min-height:170px}.vault-pick-symbol{font-size:80px}.vault-pick-copy{padding:23px}.vault-pick-copy h3{font-size:40px}.vault-pick-number{top:15px}.vault-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vault-card-main{padding:14px 12px 11px}.vault-card h3{font-size:16px}.vault-card p{font-size:11px;line-height:1.5}.vault-card-chip{font-size:7px;padding:5px}.vault-card-glyph{font-size:40px}.vault-card-index{font-size:8px;padding:5px}.vault-card-favorite{right:7px;top:7px;width:25px;height:25px}.vault-card-foot{padding:9px 12px;flex-wrap:wrap}.vault-card-open,.vault-card-play,.vault-card-repo{font-size:8px}.vault-tabs{gap:5px}.vault-tab{font-size:9px;padding:9px}.vault-tools{gap:7px}.vault-surprise{font-size:8px}.vault-dialog-content{padding:24px}.vault-bottom{font-size:8px}}
 @media(max-width:390px){.vault-grid{grid-template-columns:1fr}.vault-card-img{aspect-ratio:1.8}.vault-card-glyph{font-size:60px}.vault-card h3{font-size:22px}.vault-card p{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.vault-card{transition:none}.vault-card:hover{transform:none}}
+
+/* The 12 apps retain cinematic library cards, each with a visual identity */
+.vault-card[class*="vault-style-"] .vault-card-img{isolation:isolate;overflow:hidden}
+.vault-card[class*="vault-style-"] .vault-card-img:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0}
+.vault-style-soc .vault-card-img{background:repeating-linear-gradient(0deg,#0c1720 0 6px,#132b27 7px 9px)!important;border:1px solid #428a6b}.vault-style-soc .vault-card-glyph{filter:drop-shadow(0 0 18px #8bfb9680)}
+.vault-style-brutal .vault-card-img{background:linear-gradient(135deg,#ffe45a 0 52%,#ff6048 52%)!important;border:4px solid #242124}.vault-style-brutal .vault-card-glyph{filter:drop-shadow(8px 8px 0 #252023)}
+.vault-style-ide .vault-card-img{background:linear-gradient(#373552 23px,transparent 23px),repeating-linear-gradient(0deg,#151425 0 18px,#201e37 19px 21px)!important;border:1px solid #9b7cec}
+.vault-style-notebook .vault-card-img{background:repeating-linear-gradient(0deg,#e8ede4 0 23px,#aabfac 24px 25px)!important;border:1px solid #c6ae92}.vault-style-notebook .vault-card-glyph{filter:drop-shadow(2px 3px #9a5a4a)}
+.vault-style-editorial .vault-card-img{background:linear-gradient(135deg,#ebe9da 0 72%,#ea5e37 72%)!important;border:1px solid #c4a992}
+.vault-style-vault .vault-card-img{background:radial-gradient(circle,#3b3628 0 21%,#121b18 23% 70%,#a17b4a 72%,#111e19 73%)!important;border:1px solid #b3976b}
+.vault-style-racing .vault-card-img{background:repeating-linear-gradient(-22deg,#171531 0 16px,#342d5a 17px 23px)!important;border:1px solid #dfda4b}
+.vault-style-literary .vault-card-img{background:linear-gradient(90deg,#eee7d8 0 18%,#bc9a80 18% 20%,#efe4d4 20%)!important;border:1px solid #9f7d73}
+.vault-style-arcade .vault-card-img{background:repeating-linear-gradient(0deg,#0d0928 0 4px,#281043 5px 8px)!important;border:2px solid #fb50c0}.vault-style-arcade .vault-card-glyph{filter:drop-shadow(0 0 18px #ff48e9)}
+.vault-style-fintech .vault-card-img{background:linear-gradient(135deg,#c9f5df,#65c8a9)!important;border:1px solid #4dac86}
+.vault-style-playful .vault-card-img{background:radial-gradient(circle at 30% 20%,#ffde78 0 25%,transparent 26%),linear-gradient(140deg,#ded6ff,#afabef)!important;border:1px solid #8e70c2}
+.vault-style-ai .vault-card-img{background:radial-gradient(circle at 65% 40%,#48b0b1b0,transparent 45%),linear-gradient(145deg,#132434,#344674)!important;border:1px solid #68b4c4}
+.vault-card[class*="vault-style-"] .vault-card-index{letter-spacing:.06em}
