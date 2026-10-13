@@ -1,15 +1,18 @@
+# Sharanya Pal — Cinematic Portfolio + 24 Working Projects
+
+**Production:** https://sharanya-pal-cinematic-portfolio.vercel.app/  
+**24-project Build Vault:** https://sharanya-pal-cinematic-portfolio.vercel.app/#lab-vault
+
+The main page is a cinematic, retro-tech portfolio with Signal Radio, six case-study episodes, a work/education timeline, an interactive terminal, and a **24-project Build Vault integrated into the homepage**.
+
+The Build Vault is *not a directory of mockups*: all 12 HTML/JavaScript apps live under `labs/apps/`, each with browser-runnable code; seven Python tools, four Java apps and one SQL analytics demo live under `labs/python/`, `labs/java/` and `labs/sql/` with per-project README instructions and tests. The Python/Java/SQL tools are not offered as server-hosted interactive backends: run them locally using instructions in GitHub.
+
 # Sharanya Pal — Systems & Stories
 
 An original cinematic personal portfolio inspired by the browsing experiences of streaming platforms and the controls of music players. Built with HTML, CSS and vanilla JavaScript, with no dependencies or build step.
 
 **Live portfolio:** [sharanya-pal-cinematic-portfolio.vercel.app](https://sharanya-pal-cinematic-portfolio.vercel.app)  
 **LinkedIn:** [Sharanya Pal](https://www.linkedin.com/in/sharanya-pal-a9a637187/)
-
-## 🚀 Explore my 24 coding labs
-
-**[Launch the interactive Build Vault →](https://sharanya-dev-labs.vercel.app)** · **[Browse all project source →](labs/README.md)**
-
-A separate coding showcase with **12 playable JavaScript apps**, **7 Python projects** (IAM, RAG/LLM, ML, anomaly detection), **4 Java programs**, and **1 SQL analytics project**. Each project includes runnable source and usage notes. The source lives in [`labs/`](labs/), and the browser apps are available through the live gallery.
 
 ## Features
 

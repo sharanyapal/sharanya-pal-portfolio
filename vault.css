@@ -1,0 +1,84 @@
+/* BUILD VAULT / CINEMATIC LIBRARY */
+.vault-section{background:radial-gradient(ellipse at 93% 4%,#2f3c263c,transparent 48%),#0d120f;padding-bottom:114px;overflow:hidden;position:relative}
+.vault-section:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--acid),transparent);opacity:.35}
+.vault-topline{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;margin:38px 0 45px}
+.vault-topline h2{font-size:clamp(58px,7vw,112px);line-height:.96;letter-spacing:-.075em;margin:14px 0 23px}
+.vault-topline h2 em{font-weight:400;color:var(--acid)}
+.vault-lede{font-size:15px;line-height:1.8;color:#aebbab;max-width:600px;margin:0}
+.vault-status{flex:none;border:1px solid #3b4d3c;background:linear-gradient(135deg,#1f2b21,#121915);padding:22px 25px;width:240px;box-shadow:15px 15px 0 #0004}
+.vault-status-label,.vault-status small,.vault-mono,.vault-pick-number,.vault-tabs,.vault-tools,.vault-card-chip,.vault-card-foot,.vault-bottom,.vault-dialog-header,.vault-dialog-facts,.vault-disclosure{font-family:var(--mono)}
+.vault-status-label{display:flex;align-items:center;justify-content:space-between;font-size:9px;color:#b8c8b0;letter-spacing:.12em}
+.vault-led{display:inline-block;width:8px;height:8px;background:#c9ff76;border-radius:50%;box-shadow:0 0 13px #c9ff7677}
+.vault-status strong{display:block;font:700 69px var(--font);color:#e6f5db;letter-spacing:-.06em;margin:12px 0 2px}
+.vault-status strong span{color:#697d67;font-size:26px}
+.vault-status small{color:#b2bdad;font-size:9px;letter-spacing:.06em}
+.vault-pick{position:relative;display:grid;grid-template-columns:36% 1fr;gap:44px;min-height:288px;margin:0 0 36px;border:1px solid #536a44;overflow:hidden;background:linear-gradient(125deg,#192718,#121a13 75%);box-shadow:0 20px 70px #0004}
+.vault-pick-graphic{background:radial-gradient(circle at 55% 42%,#d9ff9240,transparent 40%),linear-gradient(145deg,#203d27,#11221a);display:grid;place-items:center;position:relative;overflow:hidden}
+.vault-pick-graphic:before,.vault-pick-graphic:after{content:"";width:280px;height:280px;border:1px solid #b8ef9769;position:absolute;transform:rotate(35deg);border-radius:34px}
+.vault-pick-graphic:after{transform:rotate(57deg) scale(.6)}
+.vault-pick-symbol{font-size:135px;color:#ddff89;text-shadow:0 0 70px #dcff8950;z-index:2;line-height:1}
+.vault-pick-grid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 34px,#c4e0b008 35px 36px),repeating-linear-gradient(90deg,transparent 0 34px,#c4e0b008 35px 36px)}
+.vault-pick-copy{padding:39px 85px 37px 0;display:flex;flex-direction:column;justify-content:center}
+.vault-mono{color:var(--acid);font-size:10px;letter-spacing:.11em}
+.vault-pick-copy h3{font:700 49px var(--font);margin:13px 0 6px;letter-spacing:-.045em}
+.vault-pick-copy p{color:#beceba;font-size:14px;line-height:1.75;max-width:540px;margin:0 0 21px}
+.vault-pick-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.vault-text-link{font:10px var(--mono);letter-spacing:.06em;color:#d1ebc0;border-bottom:1px solid #688267;padding:8px 0}
+.vault-text-link:hover{color:var(--acid)}
+.vault-pick-number{position:absolute;right:20px;top:17px;color:#94ac85;font-size:9px}
+.vault-controls{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;padding:18px 0 20px;border-top:1px solid #354534}
+.vault-tabs,.vault-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.vault-tab{background:#1b241e;color:#b6c5af;border:1px solid #354536;padding:10px 12px;font:10px var(--mono);transition:.18s}
+.vault-tab span{color:#7f9a75;padding-left:4px}
+.vault-tab.is-active,.vault-tab:hover{background:var(--acid);color:#122014;border-color:var(--acid)}
+.vault-tab.is-active span,.vault-tab:hover span{color:#38502a}
+.vault-search{display:flex;gap:9px;align-items:center;color:#cde4bf;background:#131c16;border:1px solid #526b4a;padding:9px 11px}
+.vault-search>span{font-size:21px;line-height:1}
+.vault-search input{border:0;outline:0;background:transparent;color:#f7faed;width:178px;min-width:100px;font:12px var(--body)}
+.vault-search input::placeholder{color:#849480}
+.vault-search kbd{font:10px var(--mono);color:#9eae96;border:1px solid #4b5b44;padding:3px 6px}
+.vault-surprise{background:#28362a;color:#e6f5d9;border:1px solid #51684e;padding:12px;font:9px var(--mono)}
+.vault-surprise:hover{background:#3f5440;color:var(--acid)}
+.vault-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.vault-card{position:relative;min-width:0;border:1px solid #374a39;background:#182119;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,box-shadow .25s;overflow:hidden}
+.vault-card:hover,.vault-card:focus-within{transform:translateY(-6px);border-color:#b9f378;box-shadow:0 22px 50px #0008}
+.vault-card-img{position:relative;aspect-ratio:1.4;overflow:hidden;background:radial-gradient(circle at 65% 35%,color-mix(in srgb,var(--card-accent) 28%,transparent),transparent 53%),linear-gradient(140deg,#223528,#101912)}
+.vault-card-img:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 23px,#e6ffdb09 24px 25px),repeating-linear-gradient(90deg,transparent 0 23px,#e6ffdb09 24px 25px);transform:perspective(300px) rotateX(17deg) scale(1.15)}
+.vault-card-orbit{position:absolute;top:22%;left:25%;width:50%;aspect-ratio:1;border:1px solid color-mix(in srgb,var(--card-accent) 65%,transparent);border-radius:27%;transform:rotate(25deg);box-shadow:0 0 60px color-mix(in srgb,var(--card-accent) 19%,transparent)}
+.vault-card-orbit:after{content:"";position:absolute;inset:15%;border:1px dashed color-mix(in srgb,var(--card-accent) 45%,transparent);border-radius:50%}
+.vault-card-glyph{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(42px,5vw,72px);filter:drop-shadow(0 12px 22px #000a)}
+.vault-card-index{position:absolute;left:13px;top:12px;color:#dce9d8;background:#0d1a13c8;padding:6px 7px;font:9px var(--mono)}
+.vault-card-chip{position:absolute;bottom:11px;left:12px;font-size:9px;padding:7px 8px;color:#152014;background:var(--card-accent);letter-spacing:.035em}
+.vault-card-chip.code{background:#b4bcc0}
+.vault-card-favorite{position:absolute;right:12px;top:10px;width:30px;height:30px;border:1px solid #a0b69b65;color:#e9f8e2;background:#111c13bf;font-size:17px;line-height:1}
+.vault-card-favorite.is-saved{background:#ddff86;color:#203119}
+.vault-card-main{padding:18px 17px 13px;flex:1;display:flex;flex-direction:column}
+.vault-card-category{font:9px var(--mono);letter-spacing:.11em;color:#a6cb8a;margin-bottom:9px}
+.vault-card h3{font:700 20px var(--font);line-height:1.14;letter-spacing:-.05em;margin:0 0 10px}
+.vault-card p{color:#adbbac;font:12px/1.65 var(--body);margin:0 0 12px;flex:1}
+.vault-card-tech{display:block;font:9px var(--mono);color:#829a7e;margin-top:auto;letter-spacing:.015em;line-height:1.6}
+.vault-card-foot{display:flex;justify-content:space-between;gap:9px;align-items:center;padding:12px 16px;border-top:1px solid #3c513e}
+.vault-card-open{font:10px var(--mono);background:transparent;border:0;color:#dcf7bb;padding:5px 0;text-align:left}
+.vault-card-open:hover{color:var(--acid)}
+.vault-card-play{font:10px var(--mono);color:#122014;background:var(--acid);padding:9px 10px;white-space:nowrap}
+.vault-card-play:hover{background:#fff}
+.vault-card-repo{font:9px var(--mono);color:#c9d9c2;border-bottom:1px solid #668161;padding:7px 0;white-space:nowrap}
+.vault-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:#96ac91;margin:20px 0 28px;font-size:10px;letter-spacing:.08em}
+.vault-bottom>div{display:flex;gap:22px}.vault-live-key i,.vault-code-key i{width:8px;height:8px;display:inline-block;background:var(--acid);margin-right:6px}.vault-code-key i{background:#abb7b8}
+.vault-disclosure{display:flex;align-items:flex-start;gap:13px;border-top:1px solid #394c3b;padding:22px 0 0;color:#98a99a;font-size:10px;line-height:1.9;max-width:960px}.vault-disclosure>span{font-size:16px;color:var(--acid)}.vault-disclosure p{margin:0}
+.vault-empty{grid-column:1/-1;padding:60px 20px;text-align:center;color:#c9d4c6;border:1px dashed #4b5f49}.vault-empty strong{display:block;color:var(--acid);font:30px var(--font);margin-bottom:12px}
+.vault-overlay{position:fixed;inset:0;z-index:160;display:grid;place-items:center}.vault-overlay[hidden]{display:none}.vault-overlay-backdrop{position:absolute;inset:0;background:#030704e8;backdrop-filter:blur(10px)}
+.vault-dialog{position:relative;width:min(670px,calc(100vw - 26px));max-height:92vh;overflow:auto;background:#141d16;border:1px solid #7eaa60;box-shadow:0 40px 110px #000c}
+.vault-dialog-header{display:flex;justify-content:space-between;align-items:center;background:#263629;color:#c4dfb7;padding:15px 20px;font-size:9px;letter-spacing:.08em;position:sticky;top:0;z-index:1}
+.vault-dialog-header button{background:transparent;border:0;color:#ecffe0;font:10px var(--mono);cursor:pointer}
+.vault-dialog-cover{background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--card-accent) 25%,transparent),transparent 55%),#19251c;min-height:165px;display:grid;place-items:center;position:relative;border-bottom:1px solid #405a44}
+.vault-dialog-cover>span{font-size:89px;filter:drop-shadow(0 12px 27px #000a)}.vault-dialog-cover>small{position:absolute;right:21px;bottom:16px;color:var(--card-accent);font:11px var(--mono)}
+.vault-dialog-content{padding:29px 34px 34px}.vault-dialog-content h2{font:700 clamp(32px,6vw,50px) var(--font);letter-spacing:-.065em;margin:14px 0}.vault-dialog-content>p:not(.vault-mono){font-size:15px;color:#c1d3bc;line-height:1.8}
+.vault-dialog-facts{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0;padding:14px 0;border-block:1px solid #435945;font-size:10px}.vault-dialog-facts span{color:#d3e5c9;background:#26352a;padding:10px}
+.vault-dialog-content h3{color:var(--acid);font:10px var(--mono);letter-spacing:.12em;margin:24px 0 8px}
+.vault-dialog-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.vault-dialog-actions a{padding:13px 18px;border:1px solid #728c64;color:#efffe5;font:10px var(--mono);letter-spacing:.04em}.vault-dialog-actions a.primary{background:var(--acid);color:#162319;border-color:var(--acid)}
+@media(max-width:1200px){.vault-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.vault-controls{align-items:flex-start}.vault-tools{width:100%}.vault-search{flex:1}.vault-search input{width:100%}}
+@media(max-width:840px){.vault-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.vault-topline{align-items:start}.vault-status{width:170px;padding:15px}.vault-status strong{font-size:50px}.vault-pick{grid-template-columns:34% 1fr;gap:22px}.vault-pick-copy{padding:28px 45px 28px 0}.vault-pick-copy h3{font-size:39px}}
+@media(max-width:600px){.vault-topline{flex-direction:column;gap:21px}.vault-topline h2{font-size:clamp(48px,12vw,74px)}.vault-status{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px}.vault-status strong{margin:0;font-size:39px}.vault-status small{max-width:100px;font-size:8px}.vault-pick{grid-template-columns:1fr;gap:0}.vault-pick-graphic{min-height:170px}.vault-pick-symbol{font-size:80px}.vault-pick-copy{padding:23px}.vault-pick-copy h3{font-size:40px}.vault-pick-number{top:15px}.vault-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vault-card-main{padding:14px 12px 11px}.vault-card h3{font-size:16px}.vault-card p{font-size:11px;line-height:1.5}.vault-card-chip{font-size:7px;padding:5px}.vault-card-glyph{font-size:40px}.vault-card-index{font-size:8px;padding:5px}.vault-card-favorite{right:7px;top:7px;width:25px;height:25px}.vault-card-foot{padding:9px 12px;flex-wrap:wrap}.vault-card-open,.vault-card-play,.vault-card-repo{font-size:8px}.vault-tabs{gap:5px}.vault-tab{font-size:9px;padding:9px}.vault-tools{gap:7px}.vault-surprise{font-size:8px}.vault-dialog-content{padding:24px}.vault-bottom{font-size:8px}}
+@media(max-width:390px){.vault-grid{grid-template-columns:1fr}.vault-card-img{aspect-ratio:1.8}.vault-card-glyph{font-size:60px}.vault-card h3{font-size:22px}.vault-card p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.vault-card{transition:none}.vault-card:hover{transform:none}}
