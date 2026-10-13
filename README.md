@@ -5,6 +5,12 @@ An original cinematic personal portfolio inspired by the browsing experiences of
 **Live portfolio:** [sharanya-pal-cinematic-portfolio.vercel.app](https://sharanya-pal-cinematic-portfolio.vercel.app)  
 **LinkedIn:** [Sharanya Pal](https://www.linkedin.com/in/sharanya-pal-a9a637187/)
 
+## 🚀 Explore my 24 coding labs
+
+**[Launch the interactive Build Vault →](https://sharanya-dev-labs.vercel.app)** · **[Browse all project source →](labs/README.md)**
+
+A separate coding showcase with **12 playable JavaScript apps**, **7 Python projects** (IAM, RAG/LLM, ML, anomaly detection), **4 Java programs**, and **1 SQL analytics project**. Each project includes runnable source and usage notes. The source lives in [`labs/`](labs/), and the browser apps are available through the live gallery.
+
 ## Features
 
 - Cinematic hero with original portrait photography and motion treatments
