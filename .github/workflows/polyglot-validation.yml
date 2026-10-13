@@ -51,3 +51,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m compileall -q polyglot/sp-selenium-portfolio-qa
+
+  finance-research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node --test polyglot/finance-tests.cjs
