@@ -2,6 +2,8 @@
 
 **55 projects:** 24 foundational engineering apps, 15 advanced labs, and 16 new polyglot research and systems projects. The portfolio is a cinematic interactive website with **two curated, horizontally scrolling featured shelves**, genre filtering, keyboard-scroll navigation, and a collapsible archive for the previous 39 builds.
 
+**Career project index:** [evidence-based IAM, cybersecurity, AI/ML and polyglot project showcase](./career/PROJECT_PORTFOLIO.md). This separates professional experience from personal projects and ongoing IIT Madras coursework.
+
 ## Polyglot expansion
 
 All new projects are versioned in [`polyglot/`](./polyglot/). They use **Go (concurrent SSE and rate limiting), R (Bayesian experiments and portfolio risk), MATLAB/Octave (neural-network backprop), C11 (A* and ring buffers), C# (resilient asynchronous queues), Ruby (zero-trust policy DSL), MongoDB (aggregation analytics), TypeScript (event-sourced workflow DAGs), Python + Selenium (browser QA), and JavaScript/CSS (interactive web experiences)**.
